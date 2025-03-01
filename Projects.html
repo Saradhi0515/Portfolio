@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Saradhi's Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pardha Saradhi Alapati</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="Contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Education.html">Education</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section class="projects" id="projects">
+        <h2 class="heading" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="600">My Projects</h2>
+        <div class="wrapper">
+            <a href="https://drive.google.com/file/d/14_NwzrJk5G6fh6IXvXkwOfZk7nxQsctZ/view?usp=sharing" target="_blank" class="project-item" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="700">
+                <img src="Main4A.png" alt="ANPR & ATCC Project">
+                <h2>ANPR & ATCC for Smart Traffic Management System</h2>
+                <p>Built during Infosys Springboard 5.0 internship, using ANPR & ATCC for smart traffic monitoring..</p>
+            </a>
+    
+            <a href="https://drive.google.com/file/d/1_YbNQ8JXY35ix75t2Q-VNJgMVlVrpapF/view?usp=sharing" target="_blank" class="project-item" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800">
+                <img src="Main4B.png" alt="Employee Burnout">
+                <h2>Employee Burnout Prediction Analysis</h2>
+                <p>A predictive analysis project to assess employee burnout levels using machine learning algorithms.</p>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pardha-saradhi-alapati-694374289/recent-activity/all" target="_blank" class="project-item" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="900">
+                <img src="Main4C.png" alt="Covid-19 Analysis">
+                <h2>My Certifications</h2>
+                <p>Follow up on the given link to view my certifications over Linkedin</p>
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>All rights reserved © 2025 Pardha Saradhi Alapati.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
