@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Saradhi's Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pardha Saradhi Alapati</span>
+            </div>
+            <div class="links">
+                <div class="link"><a href="Home.html">Home</a></div>
+                <div class="link"><a href="About.html">About</a></div>
+                <div class="link"><a href="Education.html">Education</a></div>
+                <div class="link"><a href="Projects.html">Projects</a></div>
+                <div class="link"><a href="Contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Education.html">Education</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="main-container contact-container">
+            <div class="left-side" data-aos="fade-up" data-aos-duration="1000">
+                <img src="Main5.png" alt="Profile Image" class="main-image">
+                <div class="social-links" data-aos="flip-up" data-aos-duration="1000">
+                    <a href="https://github.com/Saradhi0515" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/pardha-saradhi-alapati-694374289" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:pardhasaradhi@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+917382692747" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://wa.me/+917382692747" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://discord.com/users/1236665195493982269" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://t.me/pardhasaradhi_alapati" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+                <div class="button" data-aos="zoom-out-up" data-aos-duration="1000">
+                    <a href="CV.pdf" target="_blank" download class = "button2">Download CV</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <h2 class="contact-heading">Contact Me</h2>
+                <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                    <form id="contactForm" class="contact-form" name="submit-to-google-file">
+                        <input type="Text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="button2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="contact-footer">
+        <p>All rights reserved © 2025 Pardha Saradhi Alapati.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({offset:0});</script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzfsQAK2QXTxEUvvzruLln7CoLlpJDEgDZbKn7MvYrwrFxUbNxJC_QjL34xbVSkeyUx/exec'
+        const form = document.forms['submit-to-google-file']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
