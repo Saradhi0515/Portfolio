@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Saradhi's Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pardha Saradhi Alapati</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="Contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Education.html">Education</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="1500">
+                <img src="Main3.png" alt="" class="main-image">
+            </div>
+            <div class="content">
+                <h2 class="education" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </h2>
+                <p></p>
+    
+                <h3 class="ssc" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <i class="fa-solid fa-school"></i> SSC Education
+                </h3>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I have completed my SSC education from <a href="https://maps.app.goo.gl/D3irY3TSykJ7Vjja8" target="_blank" class="college-link">Sri KrishnaVeni High School, Vijayawada</a> with a <strong>CGPA of 9.0</strong> in the year <strong>2020</strong>.
+                </p>
+    
+                <h3 class="intermediate" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <i class="fa-solid fa-chalkboard-teacher"></i> Intermediate Education
+                </h3>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I have completed my Intermediate education from <a href="https://www.saradaedu.com/" target="_blank" class="college-link">Sri Sarada Junior College, Vijayawada</a> with a <strong>CGPA of 7.6</strong> in the year <strong>2022</strong>.
+                </p>
+    
+                <h3 class="btech" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <i class="fa-solid fa-building-columns"></i> B.Tech Education
+                </h3>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am currently pursuing my B.Tech in <strong>Artificial Intelligence and Machine Learning</strong> from 
+                    <a href="https://mictech.edu.in/" target="_blank" class="college-link">DVR & Dr. HS MIC College of Technology, Kanchikacherla</a>. 
+                    I am in my <strong>3rd year</strong> and have a <strong>CGPA of 7.9</strong> till now.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>All rights reserved © 2025 Pardha Saradhi Alapati.</p>
+    </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
