@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Saradhi's Portfolio</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pardha Saradhi Alapati</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Home.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Education.html">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="Contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Education.html">Education</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="1500">
+                    <img src="Main1.png" alt="" class="main-image">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Saradhi</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Hi, I'm <strong> Pardha Saradhi Alapati </strong>, a passionate <strong> Data Engineer, ML Engineer & AI Enthusiast </strong> currently pursuing my <strong> B.Tech </strong> in <strong> Artificial Intelligence and Machine Learning </strong> at <a href="https://mictech.edu.in/" target="_blank" class="college-link"> DVR & Dr. HS MIC College of Technology, Kanchikacherla</a>. With a deep interest in data-driven solutions and cutting-edge AI technologies, I enjoy optimizing machine learning models, and exploring the potential of AI in real-world applications.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://github.com/Saradhi0515" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/pardha-saradhi-alapati-694374289" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:pardhasaradhi@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:+917382692747" target="_blank"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://wa.me/+917382692747" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://discord.com/users/1236665195493982269" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://t.me/pardhasaradhi_alapati" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <div class="button" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <a href="CV.pdf" target="_blank" download class = "button2">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>All rights reserved © 2025 Pardha Saradhi Alapati.</p>
+        </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
